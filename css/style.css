@@ -1,0 +1,125 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    background-color: #fcfcfc;
+    color: #32323d;
+}
+
+.container{
+    width: 1026px;
+    margin: auto;
+}
+
+input{
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* HEADER */
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 100px;
+    height: 32px;
+    margin-top: 19px;
+}
+
+.search{
+    background-color: #fff;
+    width: 540px;
+    height: 42px;
+    margin: 15px 0 15px 7px;
+    border: 1px solid #ededed;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search .btn-search{
+    font-size: 20px;
+    color: #495057;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 0px 8px 0px 10px;
+}
+
+.search .input-search{
+    width: 490px;
+    height: 34px;
+    border: none;
+    outline: none;
+}
+
+.account{
+    display: flex;
+    flex-basis: 250px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.account .upload,
+.account .notification,
+.account .login-account .logo-account
+{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    color: #949494;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account .upload:hover,
+.account .notification:hover{
+    color: #6e55b4;
+    background-color: #DDD;
+}
+
+.login-account{
+    display: flex;
+    flex-basis: 145px;
+    justify-content: space-between;
+}
+
+.account .login-account .logo-account{
+    background-color: #ced5e3;
+    color: #edf0f8;
+}
+
+.login-account .login{
+    display: flex;
+    align-self: center;
+}
+
+.login-account .login i{
+    padding-left: 8px;
+}
+
+.login-account .login a{
+    font-weight: 600;
+    color: #32323d;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+.login-account .login a:hover{
+    color: #6e55b4;
+}
+
