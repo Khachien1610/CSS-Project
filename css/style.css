@@ -27,6 +27,11 @@ a{
     text-decoration: none;
 }
 
+p{
+    padding: 0;
+    margin: 0;
+}
+
 /* HEADER */
 .header{
     display: flex;
@@ -233,4 +238,96 @@ a{
 .wrap-btn-login .btn-login:hover{
     background-color: #FFF;
     color: #6e55b4;
+}
+
+
+/* LIST ALBUM */
+.title-list{
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #32323d;
+    text-transform: capitalize;
+}
+
+.album{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-album{
+    width: 190px;
+}
+.item-album .img-song{
+    height: 190px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.item-album .img-song img{
+    width: 100%;
+    height: 190px;
+    transition: all 0.7s;
+}
+
+.item-album .img-song:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
+} 
+
+.item-album .img-song:hover img{
+    transform: scale(1.05);
+}
+.overlay{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 190px;
+    opacity: 0;
+}
+
+.fs-50{
+    font-size: 50px;
+}
+
+.overlay i{
+    color: #FFF;
+}
+
+.title-song{
+    font-size: 14px;
+    font-weight: 500;    
+    line-height: 1.45;
+    margin: 8px 0 3px;
+    text-transform: capitalize;
+}
+
+/* ZINGCHART */
+.zingchart{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.img-chart {
+    overflow: hidden;
+    width: 242px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.img-chart img{
+    width: 242px;
+    height: 60px;       
+    transition: all 0.7s;
+}
+
+.img-chart:hover img{
+    transform: scale(1.05);
 }
