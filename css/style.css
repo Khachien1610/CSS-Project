@@ -258,6 +258,7 @@ p{
 
 .item-album{
     width: 190px;
+    cursor: pointer;
 }
 .item-album .img-song{
     height: 190px;
@@ -272,12 +273,12 @@ p{
     transition: all 0.7s;
 }
 
-.item-album .img-song:hover .overlay{
+.item-album:hover .img-song .overlay{
     opacity: 1;
     cursor: pointer;
 } 
 
-.item-album .img-song:hover img{
+.item-album:hover .img-song img{
     transform: scale(1.05);
 }
 .overlay{
@@ -288,7 +289,7 @@ p{
     position: absolute;
     top: 0;
     width: 100%;
-    height: 190px;
+    height: 100%;
     opacity: 0;
 }
 
@@ -301,11 +302,21 @@ p{
 }
 
 .title-song{
+    display: inline-block;
     font-size: 14px;
     font-weight: 500;    
     line-height: 1.45;
     margin: 8px 0 3px;
     text-transform: capitalize;
+    color: #32323d;
+}
+
+.title-song:hover {
+    color: #6e55b4;
+}
+
+.title-song:hover .overlay{
+    opacity: 1;
 }
 
 /* ZINGCHART */
@@ -315,19 +326,171 @@ p{
     margin: 20px 0px;
 }
 
-.img-chart {
-    overflow: hidden;
+.img-chart,
+.img-chart img{
     width: 242px;
     height: 60px;
+}
+
+.img-chart {
+    overflow: hidden;
     border-radius: 5px;
 }
 
-.img-chart img{
-    width: 242px;
-    height: 60px;       
+.img-chart img{     
     transition: all 0.7s;
 }
 
 .img-chart:hover img{
     transform: scale(1.05);
+}
+
+
+/* ALBUM ARTIST */
+.wrap-album-artist{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.wrap-album-artist .album-artist .img-song,
+.wrap-album-artist .album-artist .img-song img,
+.wrap-album-artist .album-artist .img-song .overlay{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.wrap-album-artist .album-artist .img-song .overlay{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.album-artist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../images/spotlight-bg.jpg);
+    background-size: cover;
+    width: 330px;
+    height: 152px;
+    box-sizing: border-box;
+    padding: 15px;
+    border: 1px solid #f3f3f3;
+    border-radius: 4px;
+}
+
+.title-artist{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.zing-choice {
+    background: linear-gradient(to right,#f508b7,#9102ff);
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+.info-artist{
+    font-size: 20px;
+    font-weight: 700;
+    color: #32323d;
+}
+
+.info-artist:hover {
+    color: #6e55b4;
+}
+
+/* NEW RELEASE */
+.wrap-new-release{
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+.title-release{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.list-release{
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-release{
+    display: block;
+    background-color: #FFF;
+    width: 330px;
+    height: 150px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px 0 rgba(190,190,206,.15);
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 15px;
+    color: #32323d;
+    display: flex;
+    position: relative;
+}
+
+.song-release{
+    width: 120px;
+}
+
+.song-release .img-song,
+.song-release .img-song img,
+.song-release .img-song .overlay{
+    width: 120px;
+    height: 120px;
+}
+
+.info-release{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-info .song-info{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.38;
+    margin-left: 10px;
+}
+
+.top-info .artist-info{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.36;
+    margin-left: 10px;
+    color: #aaaaaa;
+}
+
+.top-info .artist-info:hover{
+    color: #6e55b4;
+}
+
+.bottom-info .num-info{
+    -webkit-text-stroke: 2px rgba(102,69,193,.4);
+    font-size: 50px;
+    font-weight: 900;
+    color: transparent;
+    position: absolute;
+    bottom: -4px;
+    margin-left: 5px;
+}
+
+.bottom-info .date-info{
+    color: #dbdbdb;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    bottom: 15px;
 }
