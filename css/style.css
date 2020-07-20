@@ -663,7 +663,6 @@ p{
 /* MV HOT */
 .wrap-mv-hot{
     text-transform: capitalize;
-    margin-bottom: 200px;
 }
 
 .wrap-mv-hot .title-mv{
@@ -748,4 +747,112 @@ p{
 .sub-mv .item-album .title-song:hover,
 .sub-mv .item-album .artist-song:hover{
     color: #6e55b4;
+}
+
+/* MIX ALBUM */
+.wrap-mix-album{
+    margin-top: 30px;   
+    margin-bottom: 400px;
+}
+
+.title-mix-album{
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.list-mix-album{
+    display: flex;
+    padding: 20px;
+    margin-bottom: 11px;
+    background-color: #FFF;
+    box-shadow: 0 0 20px 0 rgba(190,190,206,.15);
+}
+
+.mix-logo{
+    width: 170px;
+    margin-right: 0;
+}
+
+.mix-logo .img-song,
+.mix-logo .img-song img,
+.mix-logo .img-song .overlay{
+    width: 170px;
+    height: 170px;
+}
+
+.mix-info{
+    width: 200px;
+    height: 170px;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #eeeeee;
+}
+.mix-info .mix-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+    line-height: 1.3;
+    color: #32323d;
+}
+
+.mix-info .mix-title:hover{
+    color: #6e55b4;
+}
+
+.mix-info .mix-number{
+    color: #949494;
+    font-size: 10px;
+}
+
+.mix-song .new-song{
+    width: 300px;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 0 13px 0 5px;
+}
+
+.mix-song{
+    display: flex;
+}
+
+.mix-song .new-song .song-number{
+    height: 30px;
+    padding: 6px 0px 0px 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.mix-song .img-new-song{
+    width: 30px;
+}
+
+.mix-song .info-new-song .new-info{
+    margin: 0;
+}
+
+.mix-song .info-new-song .song-info{
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: capitalize;
+    padding-left: 3px;
+}
+
+.mix-song .new-song .img-song,
+.mix-song .new-song .img-song .overlay{
+    width: 30px;
+    height: 30px;
+}
+
+.mix-song .new-song .img-song .overlay{
+    background-color: #f8f8f8;
+}
+
+.mix-song .overlay i{
+    color: #6e55b4;
+    font-size: 12px;
 }
